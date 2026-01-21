@@ -10,6 +10,12 @@ Real-time log aggregation and parsing with pattern matching.
 - Structured output (JSON)
 - Configurable patterns
 
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Usage
 
 ```bash
