@@ -36,6 +36,11 @@ python -m logstream parse app.log --level ERROR
 - Syslog
 - Custom patterns via YAML config
 
+## Troubleshooting
+
+- **Empty output**: Check that the log file exists and contains data matching the selected pattern
+- **Permission errors**: Ensure the log file is readable by the current user
+
 ## Requirements
 
 - Python 3.8+
