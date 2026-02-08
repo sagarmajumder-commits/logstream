@@ -36,6 +36,12 @@ python -m logstream parse app.log --level ERROR
 - Syslog
 - Custom patterns via YAML config
 
+## Notes
+
+- For large log files (>100MB), consider using the streaming mode to avoid memory issues
+- Ensure log files have appropriate read permissions before parsing
+- Python 3.9+ recommended for optimal performance
+
 ## Troubleshooting
 
 - **Empty output**: Check that the log file exists and contains data matching the selected pattern
