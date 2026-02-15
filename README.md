@@ -36,6 +36,12 @@ python -m logstream parse app.log --level ERROR
 - Syslog
 - Custom patterns via YAML config
 
+## Performance Notes
+
+- Streaming mode is recommended for log files larger than 500MB to minimize memory footprint
+- Parse mode loads entire file into memory; monitor system resources for very large files
+- Processing speed depends on pattern complexity and log format
+
 ## Notes
 
 - For large log files (>100MB), consider using the streaming mode to avoid memory issues
