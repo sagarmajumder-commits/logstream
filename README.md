@@ -29,6 +29,13 @@ tail -f app.log | python -m logstream stream
 python -m logstream parse app.log --level ERROR
 ```
 
+## Example
+
+```bash
+# Monitor nginx access logs in real-time
+tail -f /var/log/nginx/access.log | python -m logstream stream
+```
+
 ## Supported Formats
 
 - Apache/Nginx access logs
