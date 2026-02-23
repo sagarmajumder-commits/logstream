@@ -65,6 +65,7 @@ tail -f /var/log/nginx/access.log | python -m logstream stream
 
 - **Empty output**: Check that the log file exists and contains data matching the selected pattern
 - **Permission errors**: Ensure the log file is readable by the current user
+- **File not found**: Verify the input path is correct and the file exists at the specified location
 
 ## Requirements
 
