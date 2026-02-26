@@ -1,6 +1,7 @@
 """Log parsing utilities."""
 import re
 import json
+from pathlib import Path
 from datetime import datetime
 from typing import Dict, Optional, List
 
@@ -59,6 +60,10 @@ class LogParser:
         Returns:
             List of parsed log entries
         """
+        path = Path(filepath)
+        if not path.exists():
+            raise ValueError(f"Log file not found: {filepath}")
+        
         entries = []
         
         with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
